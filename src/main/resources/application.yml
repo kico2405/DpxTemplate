@@ -1,0 +1,18 @@
+spring:
+  profiles:
+  active: dev
+  thymeleaf:
+      prefix : classpath:/templates/
+      suffix : .html
+      cache : false  
+
+logging:
+  file:
+    path: ./log
+    name: backend
+  rollingpolicy:
+    maxFileSize: 10MB
+    maxHistory: '30'
+#콘솔 로그 출력 설정    
+  level:
+    root: debug 

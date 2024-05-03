@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>경량환경 홈페이지 템플릿 구동 성공</h1>
+</br>
+   <table border="1">
+      <tr>
+         <th>ID</th>
+         <th>제목</th>
+         <th>저자</th>
+         <th>Action</th>
+      </tr>
+      <tr th:each ="bbs : ${bbsList}">         
+         <td th:text="${bbs.nttId}"></td>
+         <td th:text="${bbs.nttSj}"></td>
+      </tr>
+   </table>  
+</body>
+</html>
